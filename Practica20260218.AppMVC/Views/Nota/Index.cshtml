@@ -3,7 +3,7 @@
 *@
 @{
 }
-<form asp-action="">
+<form asp-action="CalcularNota" method="post">
     <div class="row">
         <div class="col-3">
             <label>Nota 1</label>
@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-3">
             <label>Resultado</label>
-            <input type="text" disabled />
+            <input type="text" disabled value="@ViewBag.Promedio"/>
         </div>
     </div>
 </form>
